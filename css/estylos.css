@@ -1,0 +1,53 @@
+header{
+	/*background: rgba(79,132,188,1);*/
+	color: rgba(255,255,255,1);
+	margin: 0px 0px 0px 0px;
+}
+section{
+	margin: 0px 0px 0px 0px;
+}
+aside{
+	background: rgba(102,102,102,.4);
+	width: 100px;
+	height: 500px;
+}
+article{
+	background: rgba(102,102,102,.3);
+	margin: 0px 0px 0px 0px;
+}
+#btn-nav{
+	margin-top: 55px;
+}
+#btn-menu{
+	
+}
+#logo{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+#navegacion{
+	margin: 0px 0px 0px 0px;
+}
+#btn-menu{
+	margin: 5px 0px 5px 0px;
+	padding: 0px 0px 0px 5px;
+}
+#texto-encabezado{
+	color: rgba(255,255,255,1);	
+}
+#encabezado{
+	background: rgba(51,51,51,.2);
+	text-align: center;
+}
+
+#heade-menu{
+	margin: 0px 0px 0px 0px;
+	padding: 0px 0px 0px 0px;
+}
+#aside1{
+	background: rgba(51,51,51,1);
+}
+#href-aside{
+	margin: 5px 0px 5px 0px;
+	white-space: pre;
+}
