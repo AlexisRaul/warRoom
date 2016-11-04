@@ -6,81 +6,68 @@
 	<link rel="stylesheet" href="C:/Users/Equipo/Documents/practicas/WARRoom/css/bootstrap.min.css">
 	<link rel="stylesheet" href="C:/Users/Equipo/Documents/practicas/WARRoom/css/bootstrap.css">
 	<link rel="stylesheet" href="C:/Users/Equipo/Documents/practicas/WARRoom/css/estylos.css">
+	<script src="C:/Users/Equipo/Documents/practicas/WARRoom/js/scirpt.js"></script>
 	<title>Configuración Tienda</title>
+	
 </head>
 <body>
 <div class="container">
 	<header>
 		<div class="row">
-		<div class="btn-group btn-group-justified">
 			<div class="form-group">
 				<a href="C:\Users\Equipo\Documents\practicas\WARRoom\View\index.html">
 					<img src="C:\Users\Equipo\Documents\practicas\WARRoom\images\BBVALogo.png" class="thumbnail col-xs-12 col-sm-3" alt="BBVA Bancomer">
 				</a>
-					<div class="dropdown col-xs-12 col-sm-2" id="btn-nav">
-					  <button class="btn btn-primary dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Registro & Admon
-					  <span class="caret"></span></button>
-					  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-					  	<li class="dropdown-header">Elige una mesa</li>
-					    <li role="presentation"><a role="menuitem" href="C:\Users\Equipo\Documents\practicas\WARRoom\View\mesa1.html">Mesa 1</a></li>
-					    <li role="presentation"><a role="menuitem" href="C:\Users\Equipo\Documents\practicas\WARRoom\View\mesa2.html">Mesa 2</a></li>
-					    <li role="presentation"><a role="menuitem" href="C:\Users\Equipo\Documents\practicas\WARRoom\View\mesa3.html">Mesa 3</a></li>
-					    <li role="presentation" class="divider"></li>
-					    <li class="dropdown-header">Opciones Adicionales</li>
-					    <li role="presentation"><a role="menuitem" href="#">Agregar Nueva Mesa</a></li>
-					  </ul>
-					</div>
-					<a href="C:\Users\Equipo\Documents\practicas\WARRoom\View\Participantes.html" class="btn btn-primary col-xs-12 col-sm-2" id="btn-nav-participante">Participantes</a>
-					<a href="C:\Users\Equipo\Documents\practicas\WARRoom\View\IncidentManager.html" class="btn btn-primary col-xs-12 col-sm-2" id="btn-nav-manager">Incident Manager</a>
+					
 			</div>
-		</div>
 		</div>
 	</header>	
 <section>
 		<article class="col-xs-12 col-sm-12">
 			<div class="page-header">
-			<h1 id="titulo">Bienvenido a Incident Manager</h1>
+			<h1 id="titulo">Registro y Administración</h1>
 			</div>
+
 			<form class="form-horizontal col-md-12 col-md-offset-1">
 			<!-- Folio input-->
 			    <div class="form-group col-md-12 ">
 			      <label class="control-label col-md-3" for="Folio">Folio Incident Remedy</label>
-			      <input type="text" class="form-control col-md-7" disabled id="Folio" placeholder="Folio Incident Remedy">
+			      <input type="text" class="form-control col-md-7" id="Folio" placeholder="Folio Incident Remedy">
 			    	<button class="btn btn-primary" type="submit" id="btn-enviar-folio">Ir</button>
 			    </div>
 			    <!--<span class="help-block"></span>-->
 			<!-- Pais input -->
 			    <div class="form-group col-md-12 ">
 			      <label class="control-label col-md-3" for="pais">País:</label>
-			      <input type="text" class="form-control col-md-5" disabled id="pais" placeholder="País">
+			      <input type="text" class="form-control col-md-5" id="pais" placeholder="País">
 			    </div>
 			<!-- Descripcion input -->
 			    <div class="form-group col-md-12 ">
 			      <label class="control-label col-md-3" for="descripción">Descripción:</label>
-			      <textarea class="form-control col-md-5" disabled maxlength="180" minlength="30" rows="3" id="descripción" placeholder="Descripción"></textarea>
+			      <textarea class="form-control col-md-5" maxlength="180" minlength="30" rows="3" id="descripción" placeholder="Descripción"></textarea>
 			    </div>
 			<!-- Servicio input -->
 			    <div class="form-group col-md-12 ">
 			      <label class="control-label col-md-3" for="servicio">Servicio Afectado:</label>
-			      <input type="text" class="form-control col-md-5" disabled id="servicio" placeholder="Servicio Afectado">
+			      <input type="text" class="form-control col-md-5" id="servicio" placeholder="Servicio Afectado">
 			    </div>
 			<!-- Prioridad input -->
 			    <div class="form-group col-md-12 ">
 			      <label class="control-label col-md-3" for="prioridad">Prioridad:</label>
-			      <input type="text" class="form-control col-md-5" disabled id="prioridad" placeholder="Prioridad">
+			      <input type="text" class="form-control col-md-5" id="prioridad" placeholder="Prioridad">
 			    </div>
 			<!-- Alertameitno input -->
 			    <div class="form-group col-md-12 ">
 			      <label class="control-label col-md-3" for="alertamiento">Tiempo de Alertamiento:</label>
-			      <input type="text" pattern="[0-9]" class="form-control col-md-10" disabled maxlength="2" id="alertamiento" onkeypress="return justNumbers(event);" placeholder="Alertamiento">
+			      <input type="text" pattern="[0-9]" class="form-control col-md-10" maxlength="2" id="alertamiento" onkeypress="return justNumbers(event);" placeholder="Alertamiento">
 			    </div>
 			<!-- Notificaciones input -->
 			    <div class="form-group col-md-12 ">
 			      <label class="control-label col-md-3" for="notificaciones">Tiempo para notificaciones:</label>
-			      <input type="text" pattern="[0-9]" class="form-control col-md-5" disabled maxlength="2" id="notificaciones"  onkeypress="return justNumbers(event);" placeholder="Notificaciones">
+			      <input type="text" pattern="[0-9]" class="form-control col-md-5" maxlength="2" id="notificaciones"  onkeypress="return justNumbers(event);" placeholder="Notificaciones">
 			    </div>
 			 </form>
-			 <button class="btn btn-success col-md-1 col-md-offset-5">Actualizar</button>
+			 <button class="btn btn-primary col-md-1 col-md-offset-5">Enviar</button>
 		</article>
 	</section>
 </div>
