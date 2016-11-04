@@ -14,14 +14,19 @@ article{
 	background: rgba(102,102,102,.3);
 	margin: 0px 0px 0px 10px;
 	border-radius: 4px;
-	
-	height: 500px;
+	height: 650px;
 }
 #titulo{
 	text-align: center;
 }
 #btn-nav{
-	margin-top: 55px;
+	margin:55px -30px 0px 70px;
+}
+#btn-nav-participante{
+	margin:55px 0px 0px 0px;
+}
+#btn-nav-manager{
+	margin:55px 0px 0px 0px;
 }
 #btn-menu{
 	
@@ -55,4 +60,43 @@ article{
 #href-aside{
 	margin: 5px 0px 5px 0px;
 	white-space: pre;
+}
+#Folio{
+	width: 500px;
+	margin: 0px 0px 10px 0px;
+	font-size: 15px;
+}
+#btn-enviar-folio{
+	border-radius: 5px;
+	margin: 0px 0px 0px 10px;
+}
+#pais{
+	width: 500px;
+	margin: 0px 0px 10px 0px;
+	font-size: 15px;
+}
+#descripción{
+	width: 500px;
+	margin: 0px 0px 10px 0px;
+	font-size: 15px;
+}
+#servicio{
+	width: 500px;
+	margin: 0px 0px 10px 0px;
+	font-size: 15px;
+}
+#prioridad{
+	width: 500px;
+	margin: 0px 0px 10px 0px;
+	font-size: 15px;
+}
+#alertamiento{
+	width: 130px;
+	margin: 0px 0px 10px 0px;
+	font-size: 15px;
+}
+#notificaciones{
+	width: 130px;
+	margin: 0px 0px 10px 0px;
+	font-size: 15px;
 }

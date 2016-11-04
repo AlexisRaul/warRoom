@@ -12,21 +12,34 @@
 <div class="container">
 	<header>
 		<div class="row">
-		<a href="C:\Users\Equipo\Documents\practicas\WARRoom\View\index.html">
-			<img src="C:\Users\Equipo\Documents\practicas\WARRoom\images\BBVALogo.png" class="thumbnail col-xs-12 col-sm-3" alt="BBVA Bancomer">
-		</a>
-			<a href="C:\Users\Equipo\Documents\practicas\WARRoom\View\Controller.html" class="btn btn-primary col-xs-3 col-sm-2 col-sm-offset-1" id="btn-nav">Controller</a>
-			<a href="C:\Users\Equipo\Documents\practicas\WARRoom\View\Participantes.html" class="btn btn-primary col-xs-4 col-sm-2" id="btn-nav">Participantes</a>
-			<a href="#" class="btn btn-success col-xs-5 col-sm-2 active disabled" id="btn-nav">Incident Manager</a>
+		<div class="btn-group btn-group-justified">
+			<div class="form-group">
+				<a href="C:\Users\Equipo\Documents\practicas\WARRoom\View\index.html">
+					<img src="C:\Users\Equipo\Documents\practicas\WARRoom\images\BBVALogo.png" class="thumbnail col-xs-12 col-sm-3" alt="BBVA Bancomer">
+				</a>
+					<div class="dropdown col-xs-12 col-sm-2" id="btn-nav">
+					  <button class="btn btn-primary dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Registro & Admon
+					  <span class="caret"></span></button>
+					  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+					  	<li class="dropdown-header">Elige una mesa</li>
+					    <li role="presentation"><a role="menuitem" href="C:\Users\Equipo\Documents\practicas\WARRoom\View\mesa1.html">Mesa 1</a></li>
+					    <li role="presentation"><a role="menuitem" href="#">Mesa 2</a></li>
+					    <li role="presentation" class="divider"></li>
+					    <li class="dropdown-header">Opciones Adicionales</li>
+					    <li role="presentation"><a role="menuitem" href="#">Agregar Nueva Mesa</a></li>
+					  </ul>
+					</div>
+					<!--<a href="C:\Users\Equipo\Documents\practicas\WARRoom\View\Controller.html" class="btn btn-primary col-xs-3 col-sm-2 col-sm-offset-1" id="btn-nav">Registros & Admon</a>-->
+					<a href="C:\Users\Equipo\Documents\practicas\WARRoom\View\Participantes.html" class="btn btn-primary col-xs-12 col-sm-2" id="btn-nav-participante">Participantes</a>
+					<a href="C:\Users\Equipo\Documents\practicas\WARRoom\View\IncidentManager.html" class="btn btn-primary col-xs-12 col-sm-2" id="btn-nav-manager">Incident Manager</a>
+			</div>
+		</div>
 		</div>
 	</header>	
 <section>
-		<aside class="col-xs-6 col-sm-2">
-			<a href="#" class="col-xs-12 col-sm-12 btn btn-primary" id="btn-menu">Datos Generales</a>
-		</aside>
-		<article class="col-xs-6 col-sm-9">
+		<article class="col-xs-12 col-sm-12">
 			<div class="page-header">
-			<h1 id="titulo">Incident Manager</h1>
+			<h1 id="titulo">Bienvenido a Incident Manager</h1>
 			</div>
 		</article>
 	</section>
