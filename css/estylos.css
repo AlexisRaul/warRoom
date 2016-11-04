@@ -1,5 +1,4 @@
 header{
-	/*background: rgba(79,132,188,1);*/
 	color: rgba(255,255,255,1);
 	margin: 0px 0px 0px 0px;
 }
@@ -8,12 +7,18 @@ section{
 }
 aside{
 	background: rgba(102,102,102,.4);
-	width: 100px;
 	height: 500px;
+	border-radius: 5px;
 }
 article{
 	background: rgba(102,102,102,.3);
-	margin: 0px 0px 0px 0px;
+	margin: 0px 0px 0px 10px;
+	border-radius: 4px;
+	
+	height: 500px;
+}
+#titulo{
+	text-align: center;
 }
 #btn-nav{
 	margin-top: 55px;
