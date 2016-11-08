@@ -11,7 +11,7 @@
 <body id="body-login">
 <header class="col-xs-offset-0 col-sm-12 col-md-offset-4">
 <div class="container col-xs-12 col-sm12 col-md-4" id="formulario">
-<form action="/WARRoom/View/inicio.html" method="POST" class="form-horizontal col-md-12" id="formulario-registro">
+<form action="/WARRoom/View/inicio.html" method="POST" class="form-horizontal col-xs-12 col-md-12" id="formulario-registro">
     <div class="page-header">
       <h1 id="titulo"><kbd>Login</kbd></h1>
     </div>
