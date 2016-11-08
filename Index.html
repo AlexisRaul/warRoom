@@ -1,52 +1,54 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="/WARRoom/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/WARRoom/css/bootstrap.css">
-	<link rel="stylesheet" href="/WARRoom/css/estylos.css">
-	<title>Configuración Tienda</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <link rel="stylesheet" href=" /WARRoom/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/WARRoom/css/bootstrap.css">
+  <link rel="stylesheet" href="/WARRoom/css/estylos.css">
+  <title>Login Mesa de Cisis</title>
 </head>
-<body>
-<div class="container">
-	<header>
-		<div class="row">
-		<div class="btn-group btn-group-justified">
-			<div class="form-group">
-				<a href="\WARRoom\Index.html">
-					<img src="\WARRoom\images\BBVALogo.png" class="thumbnail col-xs-12 col-sm-3" alt="BBVA Bancomer">
-				</a>
-					<div class="dropdown col-xs-12 col-sm-2" id="btn-nav">
-					  <button class="btn btn-primary dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Registro & Admon
-					  <span class="caret"></span></button>
-					  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-					  	<li class="dropdown-header">Elige una mesa</li>
-					    <li role="presentation"><a role="menuitem" href="\WARRoom\View\mesa1.html">Mesa 1</a></li>
-					    <li role="presentation"><a role="menuitem" href="\WARRoom\View\mesa2.html">Mesa 2</a></li>
-					    <li role="presentation"><a role="menuitem" href="\WARRoom\View\mesa3.html">Mesa 3</a></li>
-					    <li role="presentation" class="divider"></li>
-					    <li class="dropdown-header">Opciones Adicionales</li>
-					    <li role="presentation"><a role="menuitem" href="#">Agregar Nueva Mesa</a></li>
-					  </ul>
-					</div>
-					<!--<a href="\WARRoom\View\Controller.html" class="btn btn-primary col-xs-3 col-sm-2 col-sm-offset-1" id="btn-nav">Registros & Admon</a>-->
-					<a href="\WARRoom\View\Participantes.html" class="btn btn-primary col-xs-12 col-sm-2" id="btn-nav-participante">Participantes</a>
-					<a href="\WARRoom\View\IncidentManager.html" class="btn btn-primary col-xs-12 col-sm-2" id="btn-nav-manager">Incident Manager</a>
-			</div>
-		</div>
-		</div>
-	</header>	
-<section>
-		<article class="col-xs-12 col-sm-12">
-			<div class="page-header">
-			<h1 id="titulo">Bienvenido a el Gestor de Mesa Crisis</h1>
-			</div>
-		</article>
-	</section>
+<body id="body-login">
+<header class="col-xs-offset-0 col-sm-12 col-md-offset-4">
+<div class="container col-xs-12 col-sm12 col-md-4" id="formulario">
+<form action="/WARRoom/Controller/inicioController.php" method="POST" class="form-horizontal col-xs-12 col-md-12" id="formulario-registro">
+    <div class="page-header">
+      <h1 id="titulo"><kbd>Login</kbd></h1>
+    </div>
+  <!-- Nombre -->
+    <div class="form-group">
+      <label for="#Nombre" class="sr-only">Nombre de Usuario</label>
+      <input class="form-control" type="text" id="Nombre" placeholder="Nombre de Usuario">
+    </div>
+  <!-- Contraseña -->
+    <div class="form-group">
+      <label for="#APaterno" class="sr-only">Contraseña</label>
+      <input class="form-control" type="password" id="APaterno" placeholder="Contraseña">
+    </div>
+  <!--DropDown-->
+    <div class="col-xs-12 col-sm-8" id="select-mesa">
+     <p>Selecciona la mesa de Crisis</p>
+      <select class="selectpicker">
+        <optgroup label="Elige una mesa">
+          <option>Mesa 1</option>
+          <option>Mesa 2</option>
+          <option>Mesa 3</option>
+        </optgroup>
+      </select>
+  <!-- check -->  
+    <div class="row radio inline-block">
+  <!--PHP-->
+
+  <!--Fin PHP-->
+      <label><input type="radio" value="" class="">Recordame en este equipo</label>
+      <button type="submit" id="btn-login" class="btn btn-primary"><span class="glyphicon glyphicon-ok"></span> Entrar</button>
+    </div>
+  <!-- Botones -->
+  </form> 
 </div>
-	<!-- JQuery-->
-	<script src="/WARRoom/js/jquery.js"></script>
-	<script src="/WARRoom/js/bootstrap.min.js"></script>
+</header>
+  <!-- JQuery-->
+  <script src="/WARRoom/js/jquery.js"></script>
+  <script src="/WARRoom/js/bootstrap.min.js"></script>
 </body>
 </html>
