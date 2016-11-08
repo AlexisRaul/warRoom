@@ -3,15 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-  <link rel="stylesheet" href="C:/Users/Equipo/Documents/practicas/WARRoom/css/bootstrap.min.css">
-  <link rel="stylesheet" href="C:/Users/Equipo/Documents/practicas/WARRoom/css/bootstrap.css">
-  <link rel="stylesheet" href="C:/Users/Equipo/Documents/practicas/WARRoom/css/estylos.css">
+  <link rel="stylesheet" href=" /WARRoom/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/WARRoom/css/bootstrap.css">
+  <link rel="stylesheet" href="/WARRoom/css/estylos.css">
   <title>Login Mesa de Cisis</title>
 </head>
 <body id="body-login">
 <header class="col-xs-offset-0 col-sm-12 col-md-offset-4">
 <div class="container col-xs-12 col-sm12 col-md-4" id="formulario">
-<form action="" class="form-horizontal col-md-12" id="formulario-registro">
+<form action="/WARRoom/View/inicio.html" method="POST" class="form-horizontal col-md-12" id="formulario-registro">
     <div class="page-header">
       <h1 id="titulo"><kbd>Login</kbd></h1>
     </div>
@@ -37,15 +37,18 @@
       </select>
   <!-- check -->  
     <div class="row radio inline-block">
+  <!--PHP-->
+
+  <!--Fin PHP-->
       <label><input type="radio" value="" class="">Recordame en este equipo</label>
-      <button type="button" id="btn-login" class="btn btn-primary"><span class="glyphicon glyphicon-ok"></span> Entrar</button>
+      <button type="submit" id="btn-login" class="btn btn-primary"><span class="glyphicon glyphicon-ok"></span> Entrar</button>
     </div>
   <!-- Botones -->
   </form> 
 </div>
 </header>
   <!-- JQuery-->
-  <script src="C:/Users/Equipo/Documents/practicas/WARRoom/js/jquery.js"></script>
-  <script src="C:/Users/Equipo/Documents/practicas/WARRoom/js/bootstrap.min.js"></script>
+  <script src="/WARRoom/js/jquery.js"></script>
+  <script src="/WARRoom/js/bootstrap.min.js"></script>
 </body>
 </html>

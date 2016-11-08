@@ -105,9 +105,8 @@ article{
 /*Pagina Login*/
 #body-login{
 	margin: 0px 0px 0px 0px;
-	color: rgba(0,0,0,1);
+	color: rgba(255,255,255,1);
 	margin: 220px 100px 0px 80px;
-	/*background: rgba(139,170,180,.7);*/
 	overflow:hidden;
 }
 #select-mesa{
