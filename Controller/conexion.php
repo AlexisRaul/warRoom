@@ -1,28 +1,15 @@
 <?php
-	include ("../ADOdb/adodb.inc.php");
+$serverName = "XMZ9812\SQLEXPRESS"; //serverName\instanceName
 
+// Puesto que no se han especificado UID ni PWD en el array  $connectionInfo,
+// La conexión se intentará utilizando la autenticación Windows.
+$connectionInfo = array( "Database"=>"alexis");
+$conn = sqlsrv_connect( $serverName, $connectionInfo);
 
-	$conn = ADONewConnection ('mssql');
-	//define connection string, specify database driver
-	$conn->Connect('localhost:1400', 'XMZ9812\Equipo', '', 'alexis');
-	//declare the SQL statement that will query the database
-	$query = "SELECT * FROM registro";
-	$rs = $conn->execute($query);
-
-	//execute the SQL statement and return records
-	$arr = $rs->GetArray();
-	
-	print_r($arr);
-
-	if(!$resultado){
-		echo"no";
-	}
-	else{
-		echo"si";
-	}
-
-
+if( $conn ) {
+     echo "Conexión establecida.<br />";
+}else{
+     echo "Conexión no se pudo establecer.<br />";
+     die( print_r( sqlsrv_errors(), true));
+}
 ?>
-
-
-
