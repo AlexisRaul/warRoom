@@ -11,5 +11,6 @@ if( $conn ) {
 }else{
      echo "Conexión no se pudo establecer.<br />";
      die( print_r( sqlsrv_errors(), true));
+     
 }
 ?>
