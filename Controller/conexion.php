@@ -1,16 +1,12 @@
 <?php
-$serverName = "XMZ9812\SQLEXPRESS"; //serverName\instanceName
+// El servidor con el formato: <computer>\<instance name> o 
+// <server>,<port> cuando se use un número de puerto diferente del de defecto
+$server = 'XMZ9812\SQLEXPRESS';
 
-// Puesto que no se han especificado UID ni PWD en el array  $connectionInfo,
-// La conexión se intentará utilizando la autenticación Windows.
-$connectionInfo = array( "Database"=>"alexis");
-$conn = sqlsrv_connect( $serverName, $connectionInfo);
+// Connect to MSSQL
+$link = mssql_connect($server, 'admin', '5t6y7u8i');
 
-if( $conn ) {
-     echo "Conexión establecida.<br />";
-}else{
-     echo "Conexión no se pudo establecer.<br />";
-     die( print_r( sqlsrv_errors(), true));
-     
+if (!$link) {
+    die('Algo fue mal mientras se conectaba a MSSQL');
 }
 ?>
