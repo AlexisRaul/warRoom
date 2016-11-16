@@ -21,6 +21,10 @@ article{
 	text-align: center;
 	color: rgba(0,0,0,.8);
 }
+#subtitulo{
+	text-align: center;
+	color: rgba(0,0,0,.8);	
+}
 #btn-nav{/*Boton registro y Admon de todas las paginas*/
 	margin:55px -30px 0px 70px;
 }

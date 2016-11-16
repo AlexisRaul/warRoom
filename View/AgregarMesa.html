@@ -6,54 +6,33 @@
 	<link rel="stylesheet" href="/WARRoom/css/bootstrap.min.css">
 	<link rel="stylesheet" href="/WARRoom/css/bootstrap.css">
 	<link rel="stylesheet" href="/WARRoom/css/estylos.css">
+	<script src="/WARRoom/js/scirpt.js"></script>
 	<title>Configuración Tienda</title>
+	
 </head>
 <body>
+<!--inicio de contenedor-->
 <div class="container">
+	<!-- Inicio head-->	
 	<header>
 		<div class="row">
-		<div class="btn-group btn-group-justified">
 			<div class="form-group">
-				<a href="/WARRoom/Controller/inicioController.php">
+				<a href="\WARRoom\Controller\inicioController.php">
 					<img src="\WARRoom\images\BBVALogo.png" class="thumbnail col-xs-12 col-sm-3" alt="BBVA Bancomer">
 				</a>
-					<div class="dropdown col-xs-12 col-sm-2" id="btn-nav">
-					  <button class="btn btn-primary dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Registro & Admon
-					  <span class="caret"></span></button>
-					  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-					  	<li class="dropdown-header">Elige una mesa</li>
-					    <li role="presentation"><a role="menuitem" href="/WARRoom/Controller/mesa1Controller.php">Mesa 1</a></li>
-					    <li role="presentation"><a role="menuitem" href="/WARRoom/Controller/mesa2Controller.php">Mesa 2</a></li>
-					    <li role="presentation"><a role="menuitem" href="/WARRoom/Controller/mesa3Controller.php">Mesa 3</a></li>
-					    <li role="presentation" class="divider"></li>
-					    <li class="dropdown-header">Opciones Adicionales</li>
-					    <li role="presentation"><a role="menuitem" href="/WARRoom/Controller/AgregarMesaController.php">Agregar Nueva Mesa</a></li>
-					  </ul>
-					</div>
-					<a href="\WARRoom\Controller\ParticipantesController.php" class="btn btn-primary col-xs-12 col-sm-2" id="btn-nav-participante">Participantes</a>
-					<div class="dropdown col-xs-12 col-sm-2" id="btn-nav">
-					  <button class="btn btn-primary dropdown-toggle" type="button" id="btn-nav-manager" data-toggle="dropdown">Incident Manager
-					  <span class="caret"></span></button>
-					  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-					  	<li class="dropdown-header">Elige una mesa</li>
-					    <li role="presentation"><a role="menuitem" href="/WARRoom/Controller/mesa1Controller.php">Mesa 1</a></li>
-					    <li role="presentation"><a role="menuitem" href="/WARRoom/Controller/mesa2Controller.php">Mesa 2</a></li>
-					    <li role="presentation"><a role="menuitem" href="/WARRoom/Controller/mesa3Controller.php">Mesa 3</a></li>
-					    <li role="presentation" class="divider"></li>
-					    <li class="dropdown-header">Opciones Adicionales</li>
-					    <li role="presentation"><a role="menuitem" href="/WARRoom/Controller/AgregarMesaController.php">Agregar Nueva Mesa</a></li>
-					  </ul>
-					</div>
+					
 			</div>
 		</div>
-		</div>
-	</header>	
+	</header>
+	<!--Fin head-->	
 <section>
 		<article class="col-xs-12 col-sm-12">
 			<div class="page-header">
-			<h1 id="titulo">Bienvenido a los Participantes</h1>
+				<h1 id="titulo">Registro y Administración</h1>
+				<h4 id ="subtitulo">Agrega una mesa</h4>
 			</div>
-						<form class="form-horizontal col-md-12 col-md-offset-1">
+
+			<form class="form-horizontal col-md-12 col-md-offset-1">
 			<!-- Folio input-->
 			    <div class="form-group col-md-12 ">
 			      	<label class="control-label col-md-3" for="Folio">Folio Incident Remedy</label>
@@ -96,6 +75,7 @@
 		</article>
 	</section>
 </div>
+<!--Fin de contenedor-->
 	<!-- JQuery-->
 	<script src="/WARRoom/js/jquery.js"></script>
 	<script src="/WARRoom/js/bootstrap.min.js"></script>
