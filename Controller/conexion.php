@@ -36,7 +36,15 @@ class conexion{
     
     function insertarRegistro($query){ /*extends AnotherClass*/
             $this->conectar();
+            echo $query;
+            if($query){
             $sql =mssql_query($query);
+            echo "el query se inserto";
+            }
+            else{
+                echo "el query viene vacio ";
+            }
+
     }
     /**
     * 
@@ -58,6 +66,7 @@ class conexion{
             }
     }
 }
+/*
 $folio="S-123456789";
 $pais="Mexico";
 $des="laksdjflkdsajflsdkjaf";
@@ -71,4 +80,5 @@ $query="SELECT * FROM registro";
 $obj_conexion = new conexion();
 #$obj_conexion->insertarRegistro($query);
 $obj_conexion->selectRegsitros($query);
+*/
 ?>

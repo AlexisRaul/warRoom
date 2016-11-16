@@ -1,23 +1,29 @@
 <?php
-	require_once('../View/ParticipantesController.php');
+	require_once('../Controller/ParticipantesController.php');
 	require_once('../Controller/conexion.php');
 	/**
 	 * 
 	 */
 	 class participantes{
-	 	
-	 	function consulta_folio($n_folio,$pais,$descripción){	
 
-	 		$n_folio = $$GET $_POST['Folio'];
-			$pais=$GET $_POST['pais'];
-			$descripción=$GET $_POST['descripción'];
-			$servicio=$GET $_POST['servicio'];
-			$prioridad=$GET $_POST['prioridad'];
-			$Alertamiento=$GET $_POST['Alertamiento'];
-			$notificaciones=$GET $_POST['notificaciones'];
+	 	function inserta_folio($n_folio,$pais,$descripción,$servicio,$prioridad,$Alertamiento,$notificaciones){
 
-			$obj_participantes = new conexion();
+	 		$n_folio = $_POST['Folio'];
+			$pais=$_POST['pais'];
+			$descripción=$_POST['descripción'];
+			$servicio=$_POST['servicio'];
+			$prioridad=$_POST['prioridad'];
+			$Alertamiento=$_POST['Alertamiento'];
+			$notificaciones=$_POST['notificaciones'];
+			$query="INSERT INTO registro (no_folio,pais,descripcion,servicio_afectado,prioridad,t_alertamiento,t_notificaciones) 
+			VALUES ('".$n_folio."','".$pais."','".$descripción."','".$servicio."','".$prioridad."','".$Alertamiento."','".$notificaciones."')";
+			#echo $query;
+			$obj_conexion = new conexion();
+			$obj_conexion->insertarRegistro($query);
+			
 	 	}
-	 } 
-	
+	 	function 
+	 }
+			$obj_participantes = new participantes();
+			$obj_participantes->inserta_folio($n_folio,$pais,$descripción,$servicio,$prioridad,$Alertamiento,$notificaciones);
  ?>
