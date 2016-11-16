@@ -22,7 +22,7 @@
 			$obj_conexion->insertarRegistro($query);
 			
 	 	}
-	 	function 
+	 	 
 	 }
 			$obj_participantes = new participantes();
 			$obj_participantes->inserta_folio($n_folio,$pais,$descripción,$servicio,$prioridad,$Alertamiento,$notificaciones);

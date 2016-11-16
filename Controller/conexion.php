@@ -39,7 +39,6 @@ class conexion{
             echo $query;
             if($query){
             $sql =mssql_query($query);
-            echo "el query se inserto";
             }
             else{
                 echo "el query viene vacio ";
