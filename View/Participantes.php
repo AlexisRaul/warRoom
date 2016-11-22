@@ -53,7 +53,7 @@
 			<div class="page-header">
 			<h1 id="titulo">Bienvenido a los Participantes</h1>
 			</div>
-			<form method="POST" action="/WARRoom/Model/ParticipantesModel.php" class="form-horizontal col-md-12 col-md-offset-1">
+			<form method="POST" action="/WARRoom/Controller/ParticipantesController.php" class="form-horizontal col-md-12 col-md-offset-1">
 			<!-- Folio input-->
 			    <div class="form-group col-md-12 ">
 			      	<label class="control-label col-md-3" for="Folio">Folio Incident Remedy</label>

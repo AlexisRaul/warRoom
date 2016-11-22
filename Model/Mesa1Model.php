@@ -1,28 +1,36 @@
-<?php
-	require_once('../Controller/mesa1sController.php');
-	require_once('../Controller/conexion.php');
-	/**
-	 * 
-	 */
-	 class mesa1{
+ <? 
+	require_once('..\Controller\conexion.php');
+	require_once('..\Controller\mesa1Controller.php');
 
-	 	function consulta_folio($n_folio){
 
-	 		$n_folio = $_POST['Folio'];/*
-			$pais=$_POST['pais'];
-			$descripción=$_POST['descripción'];
-			$servicio=$_POST['servicio'];
-			$prioridad=$_POST['prioridad'];
-			$Alertamiento=$_POST['Alertamiento'];
-			$notificaciones=$_POST['notificaciones'];*/
-			$query="SELECT * FROM registro WHERE no_folio = '".$n_folio."'";
-			#echo $query;
-			$obj_conexion = new conexion();
-			$obj_conexion->selectRegsitros($query);
-			
-	 	}
-	 	 
-	 }
-			$obj_mesa1 = new mesa1();
-			$obj_mesa1->consulta_folio($n_folio);
- ?>
+	class mesa1Controller extends conexion{
+
+	    function selectRegsitrosMesa1($query){
+	        $conectar = new conexion();
+	        $conectar->conectar();
+	        $datos = array();
+	            $result=mssql_query($query);
+	            #echo $result;
+	            // Verifica si hay registros
+	            if (!mssql_num_rows($result)) {
+	                echo 'No se encontraron registros';
+	            } 
+	            else {
+	            	$obtener=mssql_fetch_assoc($result);
+	            	/*
+	            	foreach ($obtener as $resultado) {
+					   	echo $resultado;
+	                	echo "<br>";
+	                }*/
+	            	echo 'OK'; 
+	            }
+	            	$datos = $obtener;
+	                return $datos;
+	        }
+	}
+/*
+$query="SELECT * FROM registro WHERE no_folio = 'CRQ0012341234'";
+$obj_conectar= new conexion();
+$obj_Mesa = new mesa1Controller();
+$obj_Mesa->selectRegsitrosMesa1($query);*/
+?>
