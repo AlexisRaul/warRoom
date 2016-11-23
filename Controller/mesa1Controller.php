@@ -19,14 +19,11 @@
 				$resutlado = mssql_fetch_array($consluta);
 				#echo $resutlado['no_folio'];
 				#echo $resutlado['pais'];
-				$contador = 0;
-				for ($i=$contador; $i < count($resutlado); $i++) { 
-					
-					while ($datos_obtenidos = $resutlado) {
-	            	 	echo $datos_obtenidos[$i];
+				$titulos = array('no_folio','pais','descripcion','servicio_afectado','prioridad','t_alertamiento','t_notificaciones');
+				for ($i=0; $i < count($resutlado); $i++) { 
+						echo $resutlado[$titulos[$i]];
 	            	 	echo "<br>";
-	            	 }#end while
-	            	 $contador +1;
+	            	
 	            }#end for 
 		    }#Fin else
 		}#Fin funcion
