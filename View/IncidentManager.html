@@ -3,10 +3,26 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-	<link rel="stylesheet" href="/WARRoom/css/bootstrap.min.css">
-	<link rel="stylesheet" href="/WARRoom/css/bootstrap.css">
-	<link rel="stylesheet" href="/WARRoom/css/estylos.css">
-	<title>Configuración Tienda</title>
+	<link rel="stylesheet" href="WARRoom/css/bootstrap.min.css">
+	<link rel="stylesheet" href="WARRoom/css/bootstrap.css">
+	<!--link rel="stylesheet" href="WARRoom/css/estylos.css"-->
+	<link href="SpryAssets/SpryValidationTextField.css" rel="stylesheet" type="text/css">
+	<style type="text/css">
+	.col-xs-12.col-sm-12 .page-header table tr th p {
+	font-family: Arial, Gadget
+}
+    body,td,th {
+	color: #06F;
+	font-weight: bold;
+}
+    h1 {
+	color: #03C;
+}
+    .col-xs-12.col-sm-12 .page-header table tr th p {
+	color: #0080C0;
+}
+    </style>
+	<title>Incident Manager</title>
 </head>
 <body>
 <div class="container">
@@ -14,90 +30,193 @@
 		<div class="row">
 			<div class="btn-group btn-group-justified">
 				<div class="form-group">
-					<a href="/WARRoom/Controller/inicioController.php">
-						<img src="\WARRoom\images\BBVALogo.png" class="thumbnail col-xs-12 col-sm-3" alt="BBVA Bancomer">
-					</a>
-						<div class="dropdown col-xs-12 col-sm-2" id="btn-nav">
-						  <button class="btn btn-primary dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Registro & Admon
-						  <span class="caret"></span></button>
-						  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-						  	<li class="dropdown-header">Elige una mesa</li>
-						    <li role="presentation"><a role="menuitem" href="/WARRoom/Controller/mesa1Controller.php">Mesa 1</a></li>
-						    <li role="presentation"><a role="menuitem" href="/WARRoom/Controller/mesa2Controller.php">Mesa 2</a></li>
-						    <li role="presentation"><a role="menuitem" href="/WARRoom/Controller/mesa3Controller.php">Mesa 3</a></li>
-						    <li role="presentation" class="divider"></li>
-						    <li class="dropdown-header">Opciones Adicionales</li>
-						    <li role="presentation"><a role="menuitem" href="/WARRoom/Controller/AgregarMesaController.php">Agregar Nueva Mesa</a></li>
-						  </ul>
-						</div>
-						<a href="\WARRoom\Controller\ParticipantesController.php" class="btn btn-primary col-xs-12 col-sm-2" id="btn-nav-participante">Participantes</a>
-						<div class="dropdown col-xs-12 col-sm-2" id="btn-nav">
-						  <button class="btn btn-primary dropdown-toggle" type="button" id="btn-nav-manager" data-toggle="dropdown">Incident Manager
-						  <span class="caret"></span></button>
-						  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-						  	<li class="dropdown-header">Elige una mesa</li>
-						    <li role="presentation"><a role="menuitem" href="/WARRoom/Controller/mesa1Controller.php">Mesa 1</a></li>
-						    <li role="presentation"><a role="menuitem" href="/WARRoom/Controller/mesa2Controller.php">Mesa 2</a></li>
-						    <li role="presentation"><a role="menuitem" href="/WARRoom/Controller/mesa3Controller.php">Mesa 3</a></li>
-						    <li role="presentation" class="divider"></li>
-						    <li class="dropdown-header">Opciones Adicionales</li>
-						    <li role="presentation"><a role="menuitem" href="/WARRoom/Controller/AgregarMesaController.php">Agregar Nueva Mesa</a></li>
-						  </ul>
-						</div>
-				</div>
+					<a href="\WARRoom\View\inicio.html">
+					<img src="\WARRoom\images\BBVALogo.png" class="thumbnail col-xs-12 col-sm-3" alt="BBVA Bancomer">
+					</a><br><br>
+					<!--div class="dropdown col-xs-12 col-sm-2" id="btn-nav">
+					  <button class="btn btn-primary dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Registro & Admon
+					  <span class="caret"></span></button>
+					  <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+					  	<li class="dropdown-header">Elige una mesa</li>
+					    <li role="presentation"><a role="menuitem" href="\WARRoom\View\mesa1.html">Mesa 1</a></li>
+					    <li role="presentation"><a role="menuitem" href="\WARRoom\View\mesa2.html">Mesa 2</a></li>
+					    <li role="presentation"><a role="menuitem" href="\WARRoom\View\mesa3.html">Mesa 3</a></li>
+					    <li role="presentation" class="divider"></li>
+					    <li class="dropdown-header">Opciones Adicionales</li>
+					    <li role="presentation"><a role="menuitem" href="#">Agregar Nueva Mesa</a></li>
+					  </ul>
+					</div-->
+						<!--a href="\WARRoom\View\Participantes.html" class="btn btn-primary col-xs-12 col-sm-2" id="btn-nav-participante">Participantes</a-->
+					<div class="dropdown col-xs-2 col-sm-0" id="btn-nav-manager" align="right">
+					  	<button class="btn btn-primary dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Incident Manager
+					  	<span class="caret"></span></button>
+					  	<ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+					  		<li class="dropdown-header">Elige una mesa</li>
+					    	<li role="presentation"><a role="menuitem" href="\WARRoom\View\mesa1.php">Mesa 1</a></li>
+					    	<li role="presentation"><a role="menuitem" href="\WARRoom\View\mesa2.html">Mesa 2</a></li>
+					    	<li role="presentation"><a role="menuitem" href="\WARRoom\View\mesa3.html">Mesa 3</a></li>
+					 		<li><a href="\WARRoom\View\IncidentManager.html" class="btn btn-primary" id="btn-nav-manager"></a></li>
+					 	</ul>
+					</div>
 			</div>
 		</div>
+	</div>
 	</header>	
 <section>
 		<article class="col-xs-12 col-sm-12">
+		<form name="form2" method="post" action="">
 			<div class="page-header">
-			<h1 id="titulo">Bienvenido a Incident Manager</h1>
-			</div>
-			<form methos="POST" class="form-horizontal col-md-12 col-md-offset-1">
-			<!-- Folio input-->
+			<h1 align="center" id="titulo">Incident Manager</h1>
+		<!--form name="form1" method="post" action="">
+			<p>
+			  <label for="Folio2">Folio de Remedy</label>
+			  Folio:
+			  <label for="folio"></label>
+			  <input name="folio" type="text" disabled id="folio" placeholder="Folio remedy" size="10" maxlength="2">
+			  <input type="submit" name="ir" id="ir" value="Ir">
+			  País:
+				<label for="pais"></label>
+				<label>
+			  <input name="pais" type="text" id="pais" placeholder="pais" size="10">
+			  </label>
+			  <p>Prioridad:<
+  			<label>
+    			<input type="text" name="prioridad" id="prioridad" placeholder="prioridad">
+  					</label></p>
+			      <p>Servicio Afectado:
+  				<label for="servicio"></label>
+		        <input type="text" name="servicio" id="servicio" placeholder="Servicio Afectado">
+	          <p>
+			    <label for="prioridad"></label></p>
+			    
+		      <p>Tiempo Alertamiento:
+			    <label for="Alertamiento2"></label>
+                <input name="Alertamiento" type="text" id="Alertamiento2" onKeyPress="return justNumbers(event);" placeholder="Alertamiento">
+			  </p>
+			  <p>Tiempo Notificacion:
+			    <label for="Notificacion2"></label>
+			    <input name="Notificacion" type="text" id="Notificacion2" onKeyPress="return justNumbers(event);" placeholder="Notificacion">
+		      </p>
+			  <p>Descripción:
+                <label for="descripcion3"></label>
+                <textarea name="descripcion" id="descripcion max-length="180"></textarea></p></form></div>
+			<form class="form-horizontal col-md-12 col-md-offset-1">
+			<div class="form-group col-md-12 "></div>
+
+			    <div class="form-group"></div>
+
+			    <div class="form-group col-md-12 "></div>
+		      <div class="form-group col-md-12 "></div>
+
+			    <div class="form-group col-md-12 "></div>
+
 			    <div class="form-group col-md-12 ">
-			      <label class="control-label col-md-3" for="Folio">Folio Incident Remedy</label>
-			      <input type="text" class="form-control col-md-7" disabled id="Folio" placeholder="Folio Incident Remedy">
-			    	<button class="btn btn-primary" type="submit" id="btn-enviar-folio">Ir</button>
-			    </div>
-			    <!--<span class="help-block"></span>-->
-			<!-- Pais input -->
-			    <div class="form-group col-md-12 ">
-			      <label class="control-label col-md-3" for="pais">País:</label>
-			      <input type="text" class="form-control col-md-5" disabled id="pais" placeholder="País">
-			    </div>
-			<!-- Descripcion input -->
-			    <div class="form-group col-md-12 ">
-			      <label class="control-label col-md-3" for="descripción">Descripción:</label>
-			      <textarea class="form-control col-md-5" disabled maxlength="180" minlength="30" rows="3" id="descripción" placeholder="Descripción"></textarea>
-			    </div>
-			<!-- Servicio input -->
-			    <div class="form-group col-md-12 ">
-			      <label class="control-label col-md-3" for="servicio">Servicio Afectado:</label>
-			      <input type="text" class="form-control col-md-5" disabled id="servicio" placeholder="Servicio Afectado">
-			    </div>
-			<!-- Prioridad input -->
-			    <div class="form-group col-md-12 ">
-			      <label class="control-label col-md-3" for="prioridad">Prioridad:</label>
-			      <input type="text" class="form-control col-md-5" disabled id="prioridad" placeholder="Prioridad">
-			    </div>
-			<!-- Alertameitno input -->
-			    <div class="form-group col-md-12 ">
-			      <label class="control-label col-md-3" for="alertamiento">Tiempo de Alertamiento:</label>
-			      <input type="text" pattern="[0-9]" class="form-control col-md-10" disabled maxlength="2" id="alertamiento" onkeypress="return justNumbers(event);" placeholder="Alertamiento">
-			    </div>
-			<!-- Notificaciones input -->
-			    <div class="form-group col-md-12 ">
-			      <label class="control-label col-md-3" for="notificaciones">Tiempo para notificaciones:</label>
-			      <input type="text" pattern="[0-9]" class="form-control col-md-5" disabled maxlength="2" id="notificaciones"  onkeypress="return justNumbers(event);" placeholder="Notificaciones">
-			    </div>
-			 </form>
-			 <button type="submit" class="btn btn-success col-md-1 col-md-offset-5">Actualizar</button>
-		</article>
+			      <table width="829" border="1">
+			        <tr>
+			          <th width="171" scope="col"><h4>ID</h4></th>
+			          <th width="249" scope="col"><h4>PARTICIPANTE</h4></th>
+			          <th width="185" scope="col"><h4>ESTADO</h4></th>
+			          <th width="179" scope="col"><h4>MESA</h4></th>
+			          <th width="181" scope="col"><h4>AGREGAR</h4></th>
+			          <th width="184" scope="col"><h4>ELIMINAR</h4></th>
+		            </tr>
+			        <tr>
+			          <th scope="row">&nbsp;</th>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+		            </tr>
+			        <tr>
+			          <th scope="row">&nbsp;</th>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+		            </tr>
+			        <tr>
+			          <th scope="row">&nbsp;</th>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+		            </tr>
+			        <tr>
+			          <th scope="row">&nbsp;</th>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+		            </tr>
+			        <tr>
+			          <th scope="row">&nbsp;</th>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+		            </tr>
+			        <tr>
+			          <th scope="row">&nbsp;</th>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+		            </tr>
+			        <tr>
+			          <th scope="row">&nbsp;</th>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+		            </tr>
+			        <tr>
+			          <th scope="row">&nbsp;</th>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+		            </tr>
+			        <tr>
+			          <th scope="row">&nbsp;</th>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+		            </tr>
+			        <tr>
+			          <th scope="row">&nbsp;</th>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+		            </tr>
+			        <tr>
+			          <th scope="row">&nbsp;</th>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+			          <td>&nbsp;</td>
+		            </tr>
+		          </table>
+		      </div>
+			 </form-->
+			</form>
+			 </article>
 	</section>
 </div>
 	<!-- JQuery-->
-	<script src="/WARRoom/js/jquery.js"></script>
-	<script src="/WARRoom/js/bootstrap.min.js"></script>
+	<script src="WARRoom/js/jquery.js"></script>
+	<script src="WARRoom/js/bootstrap.min.js"></script>
 </body>
 </html>

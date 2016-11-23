@@ -16,10 +16,12 @@
 	                return false;
 	            } 
 	            else {
-	            	echo "ok";
+	            	#echo "ok";
 	            	#$datos = mssql_fetch_array($result);
 	            	#echo $datos['no_folio'];
 	            }
+	            #$resultado = mssql_fetch_assoc($result);
+	            #print_r($resultado);
 	            return $result;
 
 	                

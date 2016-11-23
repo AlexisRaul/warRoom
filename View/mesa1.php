@@ -30,11 +30,14 @@
 			<div class="page-header">
 				<h1 id="titulo">Registro y Administración</h1>
 			</div>
+			<? foreach ($resutlado as $key => $value) {
+				
+			?>
 			<form method="post" action="\WARRoom\Controller\mesa1Controller.php" class="form-horizontal col-md-12 col-md-offset-1">
 			<!-- Folio input-->
 			    <div class="form-group col-md-12 ">
 			      	<label class="control-label col-md-3" for="Folio">Folio Incident Remedy</label>
-			      	<input type="text" class="form-control col-md-7" id="Folio" name="Folio" placeholder="Folio Incident Remedy" value=<? echo $datos['no_folio'];?>>
+			      	<input type="text" class="form-control col-md-7" id="Folio" name="Folio" placeholder="Folio Incident Remedy" value= <?php echo $value; } ?>>
 			    	<button class="btn btn-primary" type="submit" name="submit" id="btn-enviar-folio">Ir</button>
 			    </div>
 			    <!--<span class="help-block"></span>-->
