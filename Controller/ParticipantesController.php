@@ -16,7 +16,7 @@ class participantes{
 				$descripción=$_POST['descripción'];
 				$servicio=$_POST['servicio'];
 				$prioridad=$_POST['prioridad'];
-				$Alertamiento=$_POST['Alertamiento'];
+				$Alertamiento=$_POST['alertamiento'];
 				$notificaciones=$_POST['notificaciones'];
 				$query="INSERT INTO registro (no_folio,pais,descripcion,servicio_afectado,prioridad,t_alertamiento,t_notificaciones) 
 				VALUES ('".$n_folio."','".$pais."','".$descripción."','".$servicio."','".$prioridad."','".$Alertamiento."','".$notificaciones."')";

@@ -8,24 +8,23 @@
 	    function selectRegsitrosMesa1($query){
 	        $conectar = new conexion();
 	        $conectar->conectar();
-	        $datos = array();
 	            $result=mssql_query($query);
 	            #echo $result;
 	            // Verifica si hay registros
 	            if (!mssql_num_rows($result)) {
 	                echo 'No se encontraron registros';
+	                return false;
 	            } 
 	            else {
-	            	$obtener=mssql_fetch_assoc($result);
-	            	/*
-	            	foreach ($obtener as $resultado) {
-					   	echo $resultado;
-	                	echo "<br>";
-	                }*/
-	            	echo 'OK'; 
+	            	echo "ok";
+	            	#$datos = mssql_fetch_array($result);
+	            	#echo $datos['no_folio'];
 	            }
-	            	$datos = $obtener;
-	                return $datos;
+	            return $result;
+
+	                
+	                
+
 	        }
 	}
 /*
