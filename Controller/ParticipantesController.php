@@ -7,7 +7,7 @@
 class participantes{
 
 	 	function inserta_folio($n_folio,$pais,$descripción,$servicio,$prioridad,$Alertamiento,$notificaciones){
-	 		if (!$_POST['Folio']) {
+	 		if (isset($_POST['Folio'])) {
 	 			echo "No se puede insertar un registro vaico";
 	 		}
 	 		else{

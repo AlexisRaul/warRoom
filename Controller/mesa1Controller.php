@@ -5,7 +5,9 @@
 	 * 
 	 */
 	class mesa1 extends mesa1Controller{
-
+		function __construct(){
+			require_once('../View/mesa1.php');
+		}
 	 	function consulta_folio($n_folio){
 	 		if (!$_POST['Folio']) {
 	 			echo "no se puede buscar un valor vacio";	
@@ -47,6 +49,7 @@
 		}#Fin funcion
 	}#Fin clase	
 $obj_folio = new mesa1();
+
 $obj_folio->consulta_folio($folio);
 	
  ?>

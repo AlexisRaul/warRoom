@@ -30,10 +30,10 @@
 			<div class="page-header">
 				<h1 id="titulo">Registro y Administración</h1>
 			</div>
-			<? foreach ($resutlado as $key => $value) {
+			<form method="post" action="\WARRoom\Controller\mesa1Controller.php" class="form-horizontal col-md-12 col-md-offset-1">
+			<?php foreach ($resutlado as $key => $value) {
 				
 			?>
-			<form method="post" action="\WARRoom\Controller\mesa1Controller.php" class="form-horizontal col-md-12 col-md-offset-1">
 			<!-- Folio input-->
 			    <div class="form-group col-md-12 ">
 			      	<label class="control-label col-md-3" for="Folio">Folio Incident Remedy</label>

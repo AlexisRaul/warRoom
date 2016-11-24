@@ -13,6 +13,7 @@
                 die('Algo fue mal mientras se conectaba a MSSQL');
             }
             else{
+                #echo "conexion exitosa";
                 }
         }
 
